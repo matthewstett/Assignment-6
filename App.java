@@ -19,15 +19,17 @@ public class App {
     gpa = g;
     id = i;
  }
-
+// Checks if the grade is honor roll, a gpa greater than 3.6
  public boolean honorRollGrade(){
     return gpa > 3.6;
  }
+ // CHecks if the Id number or the student equals the radnomly genrated one to get free lunch
 public boolean freeLunch(int randomIDNumber) {
     return id == randomIDNumber;
 }
 
 }
+// Creating the students adn giving them their attributes
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         Student student1 = new Student("John", "Sophmore", 3.5, 101);
@@ -81,6 +83,13 @@ public boolean freeLunch(int randomIDNumber) {
         } else {
             System.out.println(student5.name + " does not get free lunch.");
         }
+
+        /* This assignemnt helped me get more comfortable with giving attributes to objects, and then
+        supplmenting this with other aspects or coding, like incoorporating the if/else statements
+        at the end of the program to check the attritbutes, adn printing out different things based upon
+        the values they have. The more I intertwine different aspects of programming the better I understand
+        them individually I find  */
+        
 }
 
     }
